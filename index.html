@@ -342,5 +342,23 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  function jumpToHash() {
+    if (!location.hash) return;
+    var el = document.querySelector(location.hash);
+    if (!el) return;
+    var html = document.documentElement;
+    var previous = html.style.scrollBehavior;
+    html.style.scrollBehavior = "auto";
+    var y = el.getBoundingClientRect().top + window.pageYOffset - 96;
+    window.scrollTo(0, Math.max(0, y));
+    html.style.scrollBehavior = previous;
+  }
+  window.addEventListener("load", jumpToHash);
+  window.addEventListener("hashchange", jumpToHash);
+})();
+</script>
+
 </body>
 </html>
