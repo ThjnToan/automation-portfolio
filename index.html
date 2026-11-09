@@ -68,6 +68,7 @@
   .stat strong{display:block;font-size:22px;letter-spacing:-.02em}
   .stat span{display:block;color:var(--muted);font-size:14px;margin-top:2px}
   section{padding:64px 0}
+  article[id]{scroll-margin-top:84px}
   .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin:0 0 30px;flex-wrap:wrap}
   h2{font-size:clamp(26px,3.4vw,38px);line-height:1.12;letter-spacing:-.02em;margin:0}
   .section-head p{color:var(--muted);max-width:560px;margin:8px 0 0}
@@ -182,7 +183,7 @@
     </div>
 
     <div class="cards">
-      <article class="card">
+      <article class="card" id="lead-inbox">
         <img src="assets/l1_digest.png" alt="Lead inbox daily digest sample">
         <div class="body">
           <p class="tag">L1 / Lead inbox</p>
@@ -202,7 +203,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card" id="weekly-report">
         <img src="assets/r1_weekly_report.png" alt="Weekly report sample with week-on-week deltas">
         <div class="body">
           <p class="tag">R1 / Weekly report</p>
@@ -222,7 +223,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card" id="document-intake">
         <img src="assets/d1_reconciliation.png" alt="Invoice reconciliation sample with confidence flags">
         <div class="body">
           <p class="tag">D1 / Document intake</p>
