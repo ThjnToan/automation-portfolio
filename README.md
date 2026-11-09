@@ -32,6 +32,7 @@ GitHub Pages rebuilds on the `main` branch.
 
 - `index.html`: the page, inline CSS, no external dependencies.
 - `assets/l1_digest.png`, `r1_weekly_report.png`, `d1_reconciliation.png`: demo screenshots.
+- `assets/og.png`: 1200x630 social preview image.
 - `assets/*.zip`: the three sample builds with tests and READMEs.
 
 All sample data is synthetic. No client, personal or employer data is used.
